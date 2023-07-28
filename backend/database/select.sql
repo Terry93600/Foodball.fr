@@ -10,8 +10,8 @@ SELECT event.*, team.nom FROM foodball.event JOIN foodball.team ON team.id = eve
 SELECT event.*, team.nom FROM foodball.event JOIN foodball.team ON team.id = event.team2_id;
 SELECT event.*, typeEvent.nom FROM foodball.event JOIN foodball.typeEvent ON typeEvent.id = event.typeEvent_id;
 
--- selectionner user
- source database/foodball.sql; table foodball.role; table foodball.team; table foodball.typeEvent; table foodball.user;
- 
 -- Récupérer les resto
 SELECT restaurant.*, user.nom FROM foodball.restaurant JOIN foodball.user ON user.id = restaurant.user_id;
+
+-- selectionner user
+ source database/foodball.sql; table foodball.role; table foodball.team; table foodball.typeEvent; table foodball.user;

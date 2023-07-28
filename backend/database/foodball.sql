@@ -97,6 +97,12 @@ INSERT INTO foodball.event VALUES
 ;
 
 INSERT INTO foodball.restaurant VALUES
-( NULL, 'KFC', 'Le poulet c est trop bon', 'non', 'true', 'Menu', 2),
-( NULL, 'MACDO', 'Le poulet c est trop bon', 'non', '1', 'is-validation', 'Menu')
+( NULL, 'KFC', 'Le poulet c est trop bon', 'non', true, 'Menu', 2),
+( NULL, 'MACDO', 'Le poulet c est trop bon', 'non', true, 'Menu', 2),
+( NULL, 'BK', 'Le poulet c est trop bon', 'non', true, 'Menu', 2),
+( NULL, 'QUICK', 'Le poulet c est trop bon', 'non', true, 'Menu', 2)
+;
+
+INSERT INTO foodball.restaurantEvent VALUES
+( NULL, 1,2)
 ;
