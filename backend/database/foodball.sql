@@ -104,5 +104,7 @@ INSERT INTO foodball.restaurant VALUES
 ;
 
 INSERT INTO foodball.restaurantEvent VALUES
-( NULL, 1,2)
+( 1,1),
+( 2,2),
+( 3,2)
 ;

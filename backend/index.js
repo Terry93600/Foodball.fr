@@ -9,7 +9,7 @@ const teamRouter = require('./routes/teamRouter')
 const userRouter = require('./routes/userRouter')
 const restaurantRouter = require('./routes/restaurantRouter')
 const eventrouter = require('./routes/eventRouter')
-const restaurantEventrouter = require('./routes/restaurantEventRouter')
+const restaurantEventRouter = require('./routes/restaurantEventRouter')
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
@@ -20,7 +20,7 @@ app.use("/api/team", teamRouter)
 app.use("/api/user", userRouter)
 app.use("/api/restaurant", restaurantRouter)
 app.use("/api/event", eventrouter)
-app.use("/api/restaurantEvent", restaurantEventrouter)
+app.use("/api/restaurantEvent", restaurantEventRouter)
 
 const PORT = process.env.PORT || 3000
 
