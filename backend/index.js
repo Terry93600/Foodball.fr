@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+const cors = require("cors"); 
 
 require('dotenv').config()
 
@@ -13,6 +14,10 @@ const restaurantEventRouter = require('./routes/restaurantEventRouter')
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
+app.use(cors({
+    origin:"http://localhost:5173"
+}))
+
 
 app.use("/api/role", roleRouter)
 app.use("/api/typeEvent", typeEventRouter)
